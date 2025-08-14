@@ -6,7 +6,7 @@ const Hero = () => {
       {/* Left Content */}
       <div className="flex-1 text-center md:text-left">
         <p className="text-lg text-gray-600 mb-2">
-          👋 Hello, I'm <span className="font-semibold text-gray-900">Shreyansh</span>
+          Hello, I'm <span className="font-semibold text-gray-900">Shreyansh</span>
         </p>
         <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-4">
           Crafting modern <span className="text-blue-600">web experiences</span> <br />
@@ -37,9 +37,9 @@ const Hero = () => {
 
       {/* Right Profile Image */}
       <div className="flex-1 flex justify-center mt-10 md:mt-0">
-        <div className="relative w-60 h-60 md:w-72 md:h-72 rounded-full bg-gradient-to-tr from-blue-500 to-purple-500 p-1 shadow-xl">
+        <div className="relative w-60 h-60 md:w-72 md:h-72 rounded-full bg-gradient-to-tr from-blue-500 to-purple-500 p-1 shadow-xl ">
           <img
-            src="pfp" // Put your image in public folder
+            src="src\assets\pfp.webp" // Put your image in public folder
             alt="Shreyansh"
             className="w-full h-full rounded-full object-cover border-4 border-white shadow-lg"
           />
