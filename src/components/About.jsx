@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <section className="about-section bg-white text-gray-800 py-16 px-6 md:px-20">
+    <section id="about" className="about-section bg-white text-gray-800 py-16 px-6 md:px-20">
       <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         
         {/* Profile Image */}
@@ -21,7 +21,7 @@ const About = () => {
           </h2>
           <p className="text-md mb-4 leading-relaxed">
             Hi, I’m <span className="font-semibold">Shreyansh Sahu</span> — a
-            passionate <span className="text-blue-600">MERN Stack Developer</span> 
+            passionate <span className="text-blue-600">MERN Stack Developer </span> 
             dedicated to crafting modern, user-friendly, and high-performance 
             web applications.
           </p>

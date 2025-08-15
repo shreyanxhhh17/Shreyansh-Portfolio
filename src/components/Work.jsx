@@ -1,129 +1,149 @@
-import React, { useState } from "react";
+import React from "react";
+import { ExternalLink, Github } from "lucide-react";
 
-// Example data for projects
 const projects = [
   {
-    title: "Portfolio Website",
-    images: [
-      "/images/portfolio1.png",
-      "/images/portfolio2.png",
-      "/images/portfolio3.png",
-    ],
-    description: "A modern portfolio website showcasing my skills and projects.",
+    title: "Rhythm - Music Player",
+    tech: ["React", "TailwindCSS", "Spotify API"],
+    description:
+      "A modern, aesthetically pleasing music web app UI inspired by Spotify.",
+    github: "#",
+    live: "#",
   },
   {
     title: "E-commerce Store",
-    images: [
-      "/images/ecom1.png",
-      "/images/ecom2.png",
-      "/images/ecom3.png",
-    ],
-    description: "Full-stack MERN e-commerce platform with payment integration.",
+    tech: ["MERN", "Stripe", "Redux"],
+    description: "Full-stack e-commerce platform with secure payment integration.",
+    github: "#",
+    live: "#",
   },
   {
-    title: "Chat Application",
-    images: [
-      "/images/chat1.png",
-      "/images/chat2.png",
-      "/images/chat3.png",
-    ],
-    description: "Real-time chat app built using Socket.io and Node.js.",
+    title: "Skills-Swap",
+    tech: ["MERN", "WebSockets"],
+    description: "Platform for exchanging skills and collaborating on projects.",
+    github: "#",
+    live: "#",
   },
   {
-    title: "Weather App",
-    images: [
-      "/images/weather1.png",
-      "/images/weather2.png",
-      "/images/weather3.png",
-    ],
-    description: "Weather forecast app using OpenWeather API.",
+    title: "Phishing Detection",
+    tech: ["Python", "Flask", "ML"],
+    description: "AI-powered phishing URL detection with 99% accuracy.",
+    github: "#",
+    live: "#",
+  },
+  {
+    title: "Real-Time Chat App",
+    tech: ["React", "Socket.io", "Node.js"],
+    description: "Instant messaging app with typing indicators & online status.",
+    github: "#",
+    live: "#",
+  },
+  {
+    title: "Gemini Clone",
+    tech: ["React", "Gemini API"],
+    description: "Clone of Google Gemini with AI-powered conversational UI.",
+    github: "#",
+    live: "#",
   },
 ];
 
-// Example data for courses
 const courses = [
   {
     title: "C Programming",
-    logo: "/src/assets/C-prog.webp",
+    tech: ["Basics", "Advanced", "DSA"],
     description: "Complete C programming course from basics to advanced.",
   },
   {
     title: "React JS",
-    logo: "/src/assets/React-Logo.webp",
-    description:
-      "Modern React JS course with hooks, state management, and projects.",
+    tech: ["Hooks", "State Management", "Projects"],
+    description: "Modern React JS course with hooks, state, and projects.",
   },
 ];
 
 const WorkPage = () => {
-  const [hoverIndex, setHoverIndex] = useState(null);
-  const [imageIndex, setImageIndex] = useState(0);
-
-  const handleMouseEnter = (index) => {
-    setHoverIndex(index);
-    let i = 0;
-    const interval = setInterval(() => {
-      setImageIndex((prev) => (prev + 1) % projects[index].images.length);
-      i++;
-      if (i > projects[index].images.length * 2) clearInterval(interval);
-    }, 1000);
-  };
-
-  const handleMouseLeave = () => {
-    setHoverIndex(null);
-    setImageIndex(0);
-  };
-
   return (
-    <div className="p-8 bg-gray-50 min-h-screen">
-      {/* Projects Section */}
-      <h2 className="text-3xl font-bold mb-6 text-gray-800">My Projects</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-        {projects.map((project, index) => (
-          <div
-            key={index}
-            className="bg-white rounded-xl shadow-lg overflow-hidden transition-transform transform hover:scale-105"
-            onMouseEnter={() => handleMouseEnter(index)}
-            onMouseLeave={handleMouseLeave}
-          >
-            <img
-              src={
-                hoverIndex === index
-                  ? project.images[imageIndex]
-                  : project.images[0]
-              }
-              alt={project.title}
-              className="w-full h-48 object-cover"
-            />
-            <div className="p-4">
-              <h3 className="text-lg font-semibold">{project.title}</h3>
-              <p className="text-gray-600 text-sm">{project.description}</p>
-            </div>
-          </div>
-        ))}
-      </div>
+    <section id="work" className="bg-gray-50 py-16">
+      <div className="max-w-7xl mx-auto px-6">
+        {/* Projects Section */}
+        <h2 className="text-4xl font-bold mb-10 text-gray-900 text-center">
+          My <span className="text-blue-600">Projects</span>
+        </h2>
 
-      {/* Courses Section */}
-      <h2 className="text-3xl font-bold mb-6 text-gray-800">My Courses</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {courses.map((course, index) => (
-          <div
-            key={index}
-            className="bg-white rounded-xl shadow-lg p-6 flex items-center gap-4 hover:shadow-xl transition"
-          >
-            <img
-              src={course.logo}
-              alt={`${course.title} logo`}
-              className="w-16 h-16 object-contain"
-            />
-            <div>
-              <h3 className="text-lg font-semibold">{course.title}</h3>
-              <p className="text-gray-600 text-sm">{course.description}</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          {projects.map((project, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-2xl shadow-lg p-6 flex flex-col justify-between hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
+            >
+              <div>
+                <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {project.tech.map((tech, idx) => (
+                    <span
+                      key={idx}
+                      className="bg-blue-100 text-blue-700 text-sm px-3 py-1 rounded-full"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+                <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                  {project.description}
+                </p>
+              </div>
+              <div className="flex gap-4 mt-4">
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1 text-gray-700 hover:text-blue-600 transition"
+                >
+                  <Github className="w-4 h-4" /> Code
+                </a>
+                <a
+                  href={project.live}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1 text-gray-700 hover:text-blue-600 transition"
+                >
+                  <ExternalLink className="w-4 h-4" /> Live
+                </a>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
+
+        {/* Courses Section */}
+        <h2 className="text-4xl font-bold mb-10 text-gray-900 text-center">
+          My <span className="text-blue-600">Courses</span>
+        </h2>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {courses.map((course, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
+            >
+              <h3 className="text-lg font-semibold mb-3">{course.title}</h3>
+              <div className="flex flex-wrap gap-2 mb-3">
+                {course.tech.map((t, idx) => (
+                  <span
+                    key={idx}
+                    className="bg-green-100 text-green-700 text-sm px-3 py-1 rounded-full"
+                  >
+                    {t}
+                  </span>
+                ))}
+              </div>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                {course.description}
+              </p>
+              
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -49,16 +49,15 @@ const Services = () => {
   ];
 
   return (
-    <section className="relative bg-gradient-to-br from-gray-50 to-gray-100 py-20 px-6 md:px-16">
+    <section id="services" className="relative bg-gradient-to-br from-gray-50 to-gray-100 py-20 px-6 md:px-16">
       <div className="max-w-7xl mx-auto text-center">
         {/* Heading */}
-        <h2 className="text-5xl font-extrabold mb-4 text-gray-900">
-          My <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500">Services</span>
+        <h2 className="text-3xl font-extrabold mb-4 text-gray-900">
+          My <span className="text-blue-500">Services</span>
         </h2>
         <p className="text-lg text-gray-600 mb-16 max-w-2xl mx-auto">
           I create digital solutions that combine elegant design with powerful functionality, tailored to your needs.
         </p>
-
         {/* Services Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {services.map((service, index) => (
