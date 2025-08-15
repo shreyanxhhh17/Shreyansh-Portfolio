@@ -1,4 +1,5 @@
 import React from "react";
+import pfp from "../assets/pfp.webp";
 
 const Hero = () => {
   return (
@@ -39,7 +40,7 @@ const Hero = () => {
       <div className="flex-1 flex justify-center mt-10 md:mt-0">
         <div className="relative w-60 h-60 md:w-72 md:h-72 rounded-full bg-gradient-to-tr from-blue-500 to-purple-500 p-1 shadow-xl ">
           <img
-            src="src\assets\pfp.webp" // Put your image in public folder
+            src={pfp} // Put your image in public folder
             alt="Shreyansh"
             className="w-full h-full rounded-full object-cover border-4 border-white shadow-lg"
           />

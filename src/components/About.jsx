@@ -1,4 +1,5 @@
 import React from "react";
+import pfp from "../assets/pfp.webp";
 
 const About = () => {
   return (
@@ -8,7 +9,7 @@ const About = () => {
         {/* Profile Image */}
         <div className="flex justify-center">
           <img
-            src="src\assets\pfp.webp" // Replace with your image path
+            src={pfp} // Replace with your image path
             alt="Shreyansh Sahu"
             className="w-80 h-96 rounded-4xl border-4 border-blue-500 shadow-lg object-cover"
           />
