@@ -3,7 +3,7 @@ import pfp from "../assets/pfp.webp";
 
 const Hero = () => {
   return (
-    <section className="relative flex flex-col md:flex-row items-center justify-between min-h-screen px-8 md:px-20 bg-gradient-to-br from-white via-gray-50 to-gray-100">
+    <section className="relative flex flex-col md:flex-row items-center justify-between min-h-screen px-8 md:px-20 bg-gradient-to-br from-white via-gray-50 to-gray-100 pt-16 md:pt-0">
       {/* Left Content */}
       <div className="flex-1 text-center md:text-left">
         <p className="text-lg text-gray-600 mb-2">
@@ -38,9 +38,9 @@ const Hero = () => {
 
       {/* Right Profile Image */}
       <div className="flex-1 flex justify-center mt-10 md:mt-0">
-        <div className="relative w-60 h-60 md:w-72 md:h-72 rounded-full bg-gradient-to-tr from-blue-500 to-purple-500 p-1 shadow-xl ">
+        <div className="relative w-60 h-60 md:w-72 md:h-72 rounded-full bg-gradient-to-tr from-blue-500 to-purple-500 p-1 shadow-xl">
           <img
-            src={pfp} // Put your image in public folder
+            src={pfp} 
             alt="Shreyansh"
             className="w-full h-full rounded-full object-cover border-4 border-white shadow-lg"
           />
