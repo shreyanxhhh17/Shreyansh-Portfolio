@@ -28,7 +28,7 @@ const Hero = () => {
             Get in Touch →
           </a>
           <a
-            href="/resume.pdf"
+            href="https://drive.google.com/file/d/1z8x6_ZuGWs7qio763CHtbY4HIQqRdE9J/view?usp=sharing"
             className="border border-gray-300 px-6 py-3 rounded-full hover:bg-gray-100 transition"
           >
             View Resume ⬇

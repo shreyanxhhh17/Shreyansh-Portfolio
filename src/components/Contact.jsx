@@ -26,7 +26,7 @@ const Contact = () => {
             <div className="flex items-center space-x-4">
               <Mail className="text-blue-600 w-6 h-6" />
               <span className="text-gray-700 text-lg">
-                shreyansh@example.com
+                sahushriyansh200@gmail.com
               </span>
             </div>
             <div className="flex items-center space-x-4">
@@ -43,7 +43,7 @@ const Contact = () => {
             {/* Social Links */}
             <div className="flex space-x-4 mt-4">
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/shreyansh-sahu-580819280?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                 target="_blank"
                 rel="noreferrer"
                 className="p-3 bg-white rounded-full shadow hover:bg-blue-50 transition"
@@ -51,7 +51,7 @@ const Contact = () => {
                 <Linkedin className="w-5 h-5 text-blue-600" />
               </a>
               <a
-                href="https://github.com"
+                href="https://github.com/shreyanxhhh17"
                 target="_blank"
                 rel="noreferrer"
                 className="p-3 bg-white rounded-full shadow hover:bg-gray-100 transition"

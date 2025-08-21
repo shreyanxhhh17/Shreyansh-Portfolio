@@ -23,10 +23,10 @@ const Footer = () => {
         </div>
           {/* Social Icons */}
           <div className="flex gap-5 text-gray-700 text-xl">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition-colors">
+            <a href="https://github.com/shreyanxhhh17" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition-colors">
               <FaGithub />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition-colors">
+            <a href="https://www.linkedin.com/in/shreyansh-sahu-580819280?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition-colors">
               <FaLinkedin />
             </a>
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition-colors">

@@ -3,47 +3,49 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    title: "Rhythm - Music Player",
-    tech: ["React", "TailwindCSS", "Spotify API"],
+    title: "Devera",
+    tech: ["React", "TailwindCSS"],
     description:
-      "A modern, aesthetically pleasing music web app UI inspired by Spotify.",
-    github: "#",
-    live: "#",
-  },
-  {
-    title: "E-commerce Store",
-    tech: ["MERN", "Stripe", "Redux"],
-    description: "Full-stack e-commerce platform with secure payment integration.",
-    github: "#",
-    live: "#",
-  },
-  {
-    title: "Skills-Swap",
-    tech: ["MERN", "WebSockets"],
-    description: "Platform for exchanging skills and collaborating on projects.",
-    github: "#",
-    live: "#",
-  },
-  {
-    title: "Phishing Detection",
-    tech: ["Python", "Flask", "ML"],
-    description: "AI-powered phishing URL detection with 99% accuracy.",
-    github: "#",
-    live: "#",
-  },
-  {
-    title: "Real-Time Chat App",
-    tech: ["React", "Socket.io", "Node.js"],
-    description: "Instant messaging app with typing indicators & online status.",
-    github: "#",
-    live: "#",
+      "A modern, aesthetically project management app.",
+    github: "https://github.com/shreyanxhhh17/DevEra.git",
   },
   {
     title: "Gemini Clone",
     tech: ["React", "Gemini API"],
     description: "Clone of Google Gemini with AI-powered conversational UI.",
-    github: "#",
-    live: "#",
+    github: "https://github.com/shreyanxhhh17/Gemini-Clone.git",
+  },
+  {
+    title: "Rhythm - Music Player",
+    tech: ["HTML5","CSS3"],
+    description: "Basic Music Player design",
+    github: "",
+    live: "",
+  },
+    {
+    title: "Phishing Detection",
+    tech: ["Python", "Flask", "ML"],
+    description: "AI-powered phishing URL detection with 99% accuracy.",
+    github: "https://github.com/shreyanxhhh17/PhisGuard-phishing-website-detection-using-ML.git",
+    live: "",
+  },
+  {
+    title: "Admin Dashboard",
+    tech: ["ReactJs", "Rechart"],
+    description: "Created a admin dashboard using reactjs & chart",
+    github: "https://github.com/shreyanxhhh17/Admin-Dashboard",
+  },
+  {
+    title: "Swap Skill",
+    tech: ["Typescript", "Javascript"],
+    description: "A platform where users can swap skills and learn together.",
+    github: "https://github.com/shreyanxhhh17/Swap-skill.git",
+  },
+  {
+    title: "Password Manager",
+    tech: ["C Programming"],
+    description: "Password Manager ",
+    github: "https://github.com/shreyanxhhh17/C-Password-Manager.git",
   },
 ];
 
@@ -99,14 +101,6 @@ const WorkPage = () => {
                   className="flex items-center gap-1 text-gray-700 hover:text-blue-600 transition"
                 >
                   <Github className="w-4 h-4" /> Code
-                </a>
-                <a
-                  href={project.live}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-1 text-gray-700 hover:text-blue-600 transition"
-                >
-                  <ExternalLink className="w-4 h-4" /> Live
                 </a>
               </div>
             </div>

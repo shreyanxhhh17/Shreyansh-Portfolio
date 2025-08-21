@@ -31,14 +31,14 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Desktop LinkedIn Button */}
+        {/* Desktop Button */}
         {!isOpen && (
           <div className="hidden md:flex items-center">
             <a
-              href="#social"
+              href="https://github.com/shreyanxhhh17"
               className="flex items-center gap-1 border border-gray-300 px-4 py-2 rounded-full text-gray-800 hover:bg-gray-100 transition"
             >
-              Linkedin <ArrowUpRight className="w-4 h-4" />
+              github<ArrowUpRight className="w-4 h-4" />
             </a>
           </div>
         )}
